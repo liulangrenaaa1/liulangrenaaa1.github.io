@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第一篇：这个博客是怎么部署到 GitHub Pages 的</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main class="wrap" style="padding:36px 0 48px;max-width:860px;">
+    <p><a href="../index.html">← 返回首页</a></p>
+    <h1>第一篇：这个博客是怎么部署到 GitHub Pages 的</h1>
+    <p class="meta">2026-04-16 · 建站实战</p>
+    <div class="card">
+      <p>这篇记录本次博客从 0 到 1 的上线过程，目标是：快速可访问、风格统一、后续维护成本低。</p>
+
+      <h3>1. 创建仓库</h3>
+      <ul>
+        <li>创建仓库：<code>liulangrenaaa1.github.io</code></li>
+        <li>用户站点规则：仓库名必须是 <code>&lt;username&gt;.github.io</code></li>
+      </ul>
+
+      <h3>2. 提交博客结构</h3>
+      <ul>
+        <li><code>index.html</code>：首页</li>
+        <li><code>assets/style.css</code>：样式</li>
+        <li><code>posts/*.html</code>：文章页</li>
+      </ul>
+
+      <h3>3. 关键兼容项</h3>
+      <ul>
+        <li>添加 <code>.nojekyll</code>，避免默认 Jekyll 干预静态资源路径</li>
+        <li>确保链接都使用相对路径，便于后续维护</li>
+      </ul>
+
+      <h3>4. 上线与验证</h3>
+      <ul>
+        <li>站点地址：<a href="https://liulangrenaaa1.github.io">https://liulangrenaaa1.github.io</a></li>
+        <li>仓库地址：<a href="https://github.com/liulangrenaaa1/liulangrenaaa1.github.io">https://github.com/liulangrenaaa1/liulangrenaaa1.github.io</a></li>
+        <li>首次发布可能有几分钟缓存/构建延迟，属于正常现象</li>
+      </ul>
+
+      <h3>5. 下一步计划</h3>
+      <ol>
+        <li>接入评论系统（giscus）</li>
+        <li>增加标签页与归档页</li>
+        <li>补充性能分析系列文章（Perfetto / Systrace）</li>
+      </ol>
+
+      <p>如果你也想快速搭一个工程感博客，这套方案是低成本且稳定的起点。</p>
+    </div>
+  </main>
+</body>
+</html>
